@@ -1,21 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Grid, Row, Col, Button, Thumbnail } from 'react-bootstrap'
+// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Grid>
+          <Row>
+          <Col xs={6} md={4}>
+            <Thumbnail src="http://placehold.it/242x200" alt="242x200">
+              <h3>Thumbnail label</h3>
+              <p>Description</p>
+              <p>
+                <Button bsStyle="primary">Button</Button>&nbsp;
+                <Button bsStyle="default">Button</Button>
+              </p>
+            </Thumbnail>
+          </Col>
+          <Col xs={6} md={4}>
+            <Thumbnail src="http://placehold.it/242x200" alt="242x200">
+              <h3>Thumbnail label</h3>
+              <p>Description</p>
+              <p>
+                <Button bsStyle="primary">Button</Button>&nbsp;
+                <Button bsStyle="default">Button</Button>
+              </p>
+            </Thumbnail>
+          </Col>
+          <Col xs={6} md={4}>
+            <Thumbnail src="http://placehold.it/242x200" alt="242x200">
+              <h3>Thumbnail label</h3>
+              <p>Description</p>
+              <p>
+                <Button bsStyle="primary">Button</Button>&nbsp;
+                <Button bsStyle="default">Button</Button>
+              </p>
+            </Thumbnail>
+          </Col>
+          </Row>
+        </Grid>
       </div>
-    );
+    )
   }
 }
-
 export default App;
